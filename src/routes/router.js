@@ -9,4 +9,7 @@ module.exports = (server) => {
     // Scores Routes
     require('./api/score')(router)
     
+    // Scoreboards Route
+    require('./api/scoreboard')(router)
+    
 }
