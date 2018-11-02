@@ -32,7 +32,7 @@ module.exports = router => {
 
         database.addSubmission(data, mcase)
         .then(submission => {
-            res.status(200).json(submission)
+            res.status(201).json(submission)
         })
         .catch(error => {
             res.status(400).json(error)

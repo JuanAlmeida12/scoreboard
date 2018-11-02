@@ -13,7 +13,7 @@ const DATA_TYPES = ["number", "number", "number", "string"]
 
 
 /**
-* Using variable to simplify run the code. This can be a database. 
+* Using variable to simplify execute the code. This can be a database. 
 */
 let persistence = {
     submissions: {}

@@ -11,5 +11,8 @@ module.exports = (server) => {
     
     // Scoreboards Route
     require('./api/scoreboard')(router)
+
+    // Gist Route
+    require('./api/gist')(router)
     
 }
