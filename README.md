@@ -296,4 +296,4 @@ Remove gist comment
 DELETE /api/gists/:gist_id/comments/:comment_id
 ```
 
-See inputs and outputs at [Github Api](https://developer.github.com/v3/gists/)
+See inputs and outputs in [Github Api](https://developer.github.com/v3/gists/)
