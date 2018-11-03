@@ -47,7 +47,7 @@ const addSubmission = (submission, mcase) => {
 const updateSubmission = (submission, id, mcase) => {
     return new Promise((resolve, reject) => {
         // Check data, if it is not valid, then reject
-        if(!validateInputData(submission) || !mcase) {
+        if(!validateInputData(submission) || !mcase || !id) {
             reject({ message:'Invalid data' })
         }  
 
