@@ -1,11 +1,9 @@
-const database = require('../../database/database')
-
 /**
  * Sets the base URL to this API 
  */
 const SCORE_BASE_URL = '/scores'
 
-module.exports = router => {
+module.exports = (router, database) => {
 
     /**
      * Retrieves all scores from database
@@ -101,7 +99,7 @@ module.exports = router => {
 
         database.deleteSubmission(id, mcase)
         .then(submission => {
-            res.status(200).json(submission)
+            res.status(203).json(submission)
         })
         .catch(error => {
             res.status(400).json(error)

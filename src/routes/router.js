@@ -1,4 +1,5 @@
 const express = require('express')
+const database = require('../database/database')
 
 module.exports = (server) => {
 
@@ -7,10 +8,10 @@ module.exports = (server) => {
     server.use('/api', router)
 
     // Scores Routes
-    require('./api/score')(router)
+    require('./api/score')(router, database)
     
     // Scoreboards Route
-    require('./api/scoreboard')(router)
+    require('./api/scoreboard')(router, database)
 
     // Gist Route
     require('./api/gist')(router)

@@ -1,11 +1,9 @@
-const database = require('../../database/database')
-
 /**
  * Sets the base URL to this API 
  */
 const SCOREBOARD_BASE_URL = '/scoreboards'
 
-module.exports = router => {
+module.exports = (router, database) => {
     
     /**
      * Get scoreboards

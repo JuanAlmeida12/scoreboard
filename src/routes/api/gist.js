@@ -13,10 +13,10 @@ module.exports = router => {
     router.get(GIST_BASE_URL, (req, res) => {
         githubService.getGists()
         .then(result => {
-            res.status(200).json(result)
+            res.status(200).json(result.data)
         })
         .catch(error => {
-            res.json(error)
+            res.status(error.response.status).json(error.response.data)
         })
     })
 
