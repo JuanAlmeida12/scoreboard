@@ -4,6 +4,7 @@
 
 - [Dependencies](#dependencies)
 - [Installation](#installation)
+- [Setup](#setup)
 - [Running](#running)
 - [Tests](#tests)
 - [API](#api)
@@ -39,6 +40,10 @@ or just:
 npm i
 ```
 Now you are able to run the server.
+
+## Setup
+
+It is necessary to change the `username` and` password` values ​​in` src / configs / githubConfig.json` to Github Api works properly.
 
 ## Running
 
