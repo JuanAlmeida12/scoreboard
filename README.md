@@ -8,22 +8,19 @@
 - [Tests](#tests)
 - [API](#api)
     - [Scores](#scores)
-        - [Add new score](#add_new_score)
-        - [Get all scores and cases](#get_all_scores_and_cases)
-        - [Get all scores from the case](#get_all_scores_from_the_case)
-        - [Get a single score from the case](#get_a_single_score_from_the_case)
-        - [Update Score](#update_score)
-        - [Delete Score](#delete_score)
+        - [Add new score](#add-new-score)
+        - [Get all scores and cases](#get-all-scores-and-cases)
+        - [Get all scores from the case](#get-all-scores-from-the-case)
+        - [Get a single score from the case](#get-a-single-score-from-the-case)
+        - [Update Score](#update-score)
+        - [Delete Score](#delete-score)
     - [Scoreboards](#scoreboards)
-        - [Get All Scoreboards](#get_all_scoreboards)
-    - [Gist](#gist)
-        - [Get User Gists](#get_user_gists)
-        - [Add new Gist](#add_new_gist)
-        - [Update a Gist](#update)
+        - [Get All Scoreboards](#get-all-scoreboards)
+    - [Gists](#gists)
 
 ## Dependencies
 
-The project requires only NodeJs[www.nodejs.org]
+The project requires only [NodeJs](www.nodejs.org)
 
 ## Installation
 
@@ -243,3 +240,44 @@ Status 200 OK
 }
 ```
 
+### Gists
+URLs to manipulate gists from this server.
+
+Get user gists
+```
+GET /api/gists
+```
+Create a new gist
+```
+POST /api/gists
+```
+Update gist
+```
+PATCH /api/gists/:gist_id
+```
+Remove gist
+```
+DELETE /api/gists/:gist_id
+```
+Get gist comments
+```
+GET /api/gists/:gist_id/comments
+```
+Create gist comment
+```
+POST /api/gists/:gist_id/comments
+```
+Get single gist comment
+```
+POST /api/gists/:gist_id/comments/:comment_id
+```
+Update gist comment
+```
+PATCH /api/gists/:gist_id/comments/:comment_id
+```
+Remove gist comment
+```
+DELETE /api/gists/:gist_id/comments/:comment_id
+```
+
+See inputs and outputs at [Github Api](https://developer.github.com/v3/gists/)
