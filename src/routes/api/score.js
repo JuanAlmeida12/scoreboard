@@ -99,7 +99,7 @@ module.exports = (router, database) => {
 
         database.deleteSubmission(id, mcase)
         .then(submission => {
-            res.status(203).json(submission)
+            res.status(204).json(submission)
         })
         .catch(error => {
             res.status(400).json(error)

@@ -108,10 +108,10 @@ describe(BASE_URL, () => {
         })
     })
 
-    it(`DELETE ${BASE_URL}/:case/:id expect Response Code 203`, () => {
+    it(`DELETE ${BASE_URL}/:case/:id expect Response Code 204`, () => {
         return requester.delete(`${BASE_URL}/${context.case}/${context.id}`)
         .then(response => {
-            expect(response).to.have.status(203)
+            expect(response).to.have.status(204)
             expect(response.body).to.be.a('object')
         })
     })
