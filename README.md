@@ -77,6 +77,14 @@ POST /api/scores
 | `mcase` | `number` | **Required**. Number of scoreboard test case |
 | `data` | `array` | **Required**. Array with submission data |
 
+##### Exemple
+```json
+{
+    "mcase": 2,
+    "data": [1,1,25,"C"]
+}
+```
+
 ##### Response
 ```
 Status: 201 Created
@@ -172,6 +180,13 @@ PUT /api/scores/:case_id/:score_id
 | Name | Type | Description |
 | --- | --- | --- |
 | `data` | `array` | **Required**. Array with submission data |
+
+##### Exemple
+```json
+{
+    "data": [2,2,45,"C"]
+}
+```
 
 ##### Response
 ```
