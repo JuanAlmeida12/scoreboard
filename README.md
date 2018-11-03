@@ -215,6 +215,7 @@ Status: 200 Created
 DELETE /api/scores/:case_id/:score_id
 ```
 ##### Response
+```
 Status: 203
 ```
 ```json
