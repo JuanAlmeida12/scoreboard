@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon",
     "production": "pm2 start src/app.js --name Scoreboard",
-    "test": "nyc --reporter=html mocha --exit --timeout 5000"
+    "test": "nyc --reporter=cobertura mocha --exit --timeout 5000"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,9 @@
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chai-http": "^4.2.0",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0"
   }
